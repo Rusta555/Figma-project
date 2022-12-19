@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  z-index: 3;
+}
+header .head {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* navigation */
+}
+header .head .logo {
+  display: flex;
+}
+header .head .logo a {
+  display: flex;
+  width: 79px;
+  height: 24px;
+}
+header .head .site-navigation {
+  position: relative;
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* ////////////////////////////- */
+}
+header .head .site-navigation nav {
+  display: flex;
+}
+header .head .site-navigation nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header .head .site-navigation nav ul li {
+  display: flex;
+  margin-left: 42px;
+}
+header .head .site-navigation nav ul li a {
+  display: flex;
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  align-items: center;
+}
+header .head .site-navigation nav ul li button {
+  display: flex;
+  margin-left: 146px;
+  width: 157px;
+  height: 40px;
+  align-items: center;
+  background-color: #6F2CFF;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+}
+header .head .site-navigation nav ul li button .btn {
+  color: #fff;
+}
+
+.main-container {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../image/bg\ 1.png);
+  height: 755px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0px;
+}
+.introduction .content {
+  width: 45%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.introduction .content .slogan {
+  width: 261px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 19px;
+}
+.introduction .content .head-content {
+  width: 470px;
+  height: 61px;
+}
+.introduction .content .head-content h1 {
+  font-size: 54px;
+  font-family: "Roboto", sans-serif;
+  line-height: 61px;
+}
+.introduction .content .middle-content {
+  width: 470px;
+  height: 61px;
+}
+.introduction .content .middle-content h2 {
+  font-size: 54px;
+  font-family: "Roboto", sans-serif;
+  color: #6F2DFF;
+  line-height: 61px;
+}
+.introduction .content .description {
+  width: 458px;
+  height: 120px;
+  margin-top: 37px;
+}
+.introduction .content .description h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  align-content: flex-end;
+  line-height: 30px;
+}
+.introduction .content .description h3 span {
+  font-weight: 900;
+}
+.introduction .content .register {
+  display: flex;
+  width: 100%;
+  height: 0 auto;
+}
+.introduction .content .register input {
+  width: 268px;
+  height: 45px;
+  border: 1px solid #6F2CFF;
+  border-radius: 20px 0 0 20px;
+}
+.introduction .content .register input ::-moz-placeholder {
+  margin-left: 25px;
+}
+.introduction .content .register input :-ms-input-placeholder {
+  margin-left: 25px;
+}
+.introduction .content .register input ::placeholder {
+  margin-left: 25px;
+}
+.introduction .content .register .demo {
+  width: 187px;
+  background-color: #6F2CFF;
+  border: 1px solid #6F2CFF;
+  border-radius: 0 20px 20px 0;
+}
+.introduction .content .register .demo a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=style.css.map */
