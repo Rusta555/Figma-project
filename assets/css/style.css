@@ -16,6 +16,10 @@
   margin: 0 auto;
 }
 
+/* .container-commerce{
+    max-width: 75%;
+    margin: 0 auto
+} */
 header {
   position: relative;
   width: 100%;
@@ -101,142 +105,148 @@ header .head .log ul li .log-in {
   align-items: center;
 }
 
-/* main  */
-.introduction {
+main {
+  width: 100%;
+  height: 205vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+main .introduction {
   background-image: url(../image/bg\ 1.png);
   width: 100%;
-  height: 75vh;
-  background-repeat: no-repeat;
+  height: 700px;
   background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  padding: 60px 0px;
-  display: block;
-  position: relative;
+  padding-bottom: 40px;
 }
-.introduction .content {
+main .introduction .content {
   width: 100%;
   height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
+  position: relative;
 }
-.introduction .content .slogan {
+main .introduction .content .slogan {
   width: 261px;
   font-size: 15px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   margin-bottom: 19px;
 }
-.introduction .content .head-content {
+main .introduction .content .head-content {
   width: 470px;
   height: 61px;
 }
-.introduction .content .head-content h1 {
+main .introduction .content .head-content h1 {
   font-size: 54px;
   font-family: "Roboto", sans-serif;
   line-height: 61px;
 }
-.introduction .content .middle-content {
+main .introduction .content .middle-content {
   width: 470px;
   height: 61px;
 }
-.introduction .content .middle-content h2 {
+main .introduction .content .middle-content h2 {
   font-size: 54px;
   font-family: "Roboto", sans-serif;
   color: #6F2DFF;
   line-height: 61px;
 }
-.introduction .content .description {
+main .introduction .content .description {
   width: 458px;
   height: 120px;
   margin-top: 37px;
 }
-.introduction .content .description h3 {
+main .introduction .content .description h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 18px;
   align-content: flex-end;
   line-height: 30px;
 }
-.introduction .content .description h3 span {
+main .introduction .content .description h3 span {
   font-weight: 900;
 }
-.introduction .content .register {
+main .introduction .content .register {
   display: flex;
   width: 100%;
   height: 0 auto;
 }
-.introduction .content .register input {
+main .introduction .content .register input {
   width: 268px;
   height: 45px;
   border: 1px solid #6F2CFF;
   border-radius: 20px 0 0 20px;
   padding-left: 19px;
 }
-.introduction .content .register .demo {
+main .introduction .content .register .demo {
   width: 187px;
   background-color: #6F2CFF;
   border: 1px solid #6F2CFF;
   border-radius: 0 20px 20px 0;
+  cursor: pointer;
 }
-.introduction .content .register .demo a {
+main .introduction .content .register .demo a {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
-
-.top {
+main .top {
   width: 100%;
   background-color: #fff;
-  height: 150vh;
-  display: block;
+  height: 100vh;
 }
-.top .brands {
+main .top .brands {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
   /* align-items: center; */
 }
-.top .brands .brands-introduction {
+main .top .brands .brands-introduction {
   width: 100%;
   height: 94px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.top .brands .brands-introduction h3 {
+main .top .brands .brands-introduction h3 {
   color: #1C1C1C;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   align-items: center;
 }
-.top .brands .customers {
+main .top .brands .customers {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-.top .brands .customers ul {
+main .top .brands .customers ul {
   display: flex;
   width: 100%;
   height: 37px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.top .brands .to-customers {
+main .top .brands .to-customers {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 66px;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
 }
-.top .brands .to-customers a {
+main .top .brands .to-customers a {
   color: #1C1C1C;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 33px;
+  font-weight: 700;
 }
-.top .brands .to-customers .underline {
+main .top .brands .to-customers .underline {
   content: "";
   display: flex;
   width: 200px;
@@ -245,20 +255,252 @@ header .head .log ul li .log-in {
   background: #6F2CFF;
   /* margin: 20px auto 25px; */
 }
-.top .stats {
+main .top .stats {
   display: flex;
   width: 100%;
-  height: 70vh;
+  max-height: 66vh;
+  padding-top: 50px;
+  align-items: center;
 }
-.top .stats .stats-book {
+main .top .stats .stats-book {
   display: flex;
-  width: 50%;
-  height: 70vh;
-  flex-direction: column;
-  align-content: center;
+  width: 65%;
+  height: 45vh;
+  align-items: center;
 }
-.top .stats .stats-book p {
+main .top .stats .stats-book .slogan-2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+main .top .stats .stats-book .slogan-2 h1 {
+  padding-bottom: 58px;
   font-size: 40px;
   line-height: 45px;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+main .top .stats .stats-book .slogan-2 .demo-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+main .top .stats .stats-book .slogan-2 .demo-btn .demo {
+  display: flex;
+  justify-content: flex-end;
+  width: 187px;
+  height: 40px;
+  align-items: center;
+  background-color: #6F2CFF;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+main .top .stats .stats-book .slogan-2 .demo-btn .demo a {
+  color: #fff;
+}
+main .top .stats .stats-book .slogan-2 .demo-btn .to-customers-2 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 66px;
+  align-items: center;
+  flex-direction: column;
+}
+main .top .stats .stats-book .slogan-2 .demo-btn .to-customers-2 a {
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 33px;
+  font-weight: 700;
+}
+main .top .stats .stats-book .slogan-2 .demo-btn .to-customers-2 .underline-2 {
+  content: "";
+  display: flex;
+  width: 164px;
+  border-radius: 10px;
+  height: 4px;
+  background: #6F2CFF;
+}
+main .top .stats .stats-book .slogan-2 .audit {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: column;
+}
+main .top .stats .stats-book .slogan-2 .audit h3 {
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 600;
+  padding-bottom: 7px;
+  padding-top: 56px;
+}
+main .top .stats .stats-book .slogan-2 .audit a {
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  border-bottom: 0.5px solid #1C1C1C;
+  width: 26%;
+}
+main .top .stats .stats-left {
+  display: flex;
+  width: 30%;
+  height: 660px;
+  border-left: 1px solid #E0E0E0;
+}
+main .top .stats .stats-left ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 10px;
+}
+main .top .stats .stats-left ul li {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+main .top .stats .stats-left ul li P {
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+main .top .stats .stats-left ul li span {
+  width: 100%;
+  height: 44px;
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+}
+main .top .stats .stats-right {
+  display: flex;
+  width: 35%;
+  height: 660px;
+  border-left: 1px solid #E0E0E0;
+}
+main .top .stats .stats-right ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 10px;
+}
+main .top .stats .stats-right ul li {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+main .top .stats .stats-right ul li P {
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+main .top .stats .stats-right ul li span {
+  width: 100%;
+  height: 44px;
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+}
+main .bottom {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+main .bottom .introduction-bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .bottom .introduction-bottom .slogan-3 {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  flex-direction: column;
+  align-items: center;
+}
+main .bottom .introduction-bottom .slogan-3 h2 {
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+main .bottom .introduction-bottom .slogan-3 p {
+  width: 72%;
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+main .bottom .introduction-bottom .commercial {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main .bottom .introduction-bottom .commercial ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .bottom .introduction-bottom .commercial ul li {
+  display: flex;
+  width: 100%;
+  height: 75%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .bottom .introduction-bottom .commercial ul li .insight {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+}
+main .bottom .introduction-bottom .commercial ul li h3 {
+  width: 80%;
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  line-height: 35px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 15px;
+}
+main .bottom .introduction-bottom .commercial ul li p {
+  width: 72%;
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 15px;
 }/*# sourceMappingURL=style.css.map */
