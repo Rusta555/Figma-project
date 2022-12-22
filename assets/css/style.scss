@@ -618,7 +618,11 @@ main{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    
+                    color: #1C1C1C;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 45px;
+                    line-height: 45px;
+                    font-weight: 700;
                 }
                 .cards{
                     width: 100%;
@@ -636,17 +640,32 @@ main{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
+                        align-items: center;
                         margin: 50px;
-                        .item-1{
-                            width: 100%;
-                            display: flex;
-                            justify-content: center;
-                            
-                        }
                             img{
                                 width:50px ;
                                 height: 50px;
                                 display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            h2 {
+                                color: #1C1C1C;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 19px;
+                                line-height: 45px;
+                                font-weight: 700;
+                                text-align: center;
+                                padding-top: 15px; 
+                            }
+                            h3 {
+                                color: #1C1C1C;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 15px;
+                                line-height: 22px;
+                                font-weight: 400;
+                                text-align: center;
+                                padding-top: 15px; 
                             }
                         }
                 }
